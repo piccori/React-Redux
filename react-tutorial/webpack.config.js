@@ -24,6 +24,10 @@ module.exports = {
 	output: {
 		path: __dirname + "/src/",
 		filename: "client.min.js",
+		publicPath: "/",
+	},
+	devServer: {
+		historyApiFallback: true,
 	},
 	plugins: debug
 		? []
