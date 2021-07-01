@@ -1,0 +1,131 @@
+<!-- HTML5文書であることを宣言定義している -->
+<!DOCTYPE html>
+<!-- HTMLページのルート要素  langは言語-->
+<html lang="en">
+<!-- HTMLページに関するメタ情報 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<!-- ドキュメントの本文を定義し、見出し、段落、画像、ハイパーリンク、表、リストなど表示されている全てのコンテンツのコンテナ -->
+
+<body style="background-color: aliceblue;">
+  <a href="#C4">Jump to Chapter 4</a>
+  <!-- h1は大きな見出し -->
+  <h1 style="background-color: brown;">h1見出し</h1>
+  <h1 style="font-size: 60px;">より大きな見出し</h1>
+  <h2 style="color: red;">h2見出し</h2>
+  <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">h3見出し</h3>
+  <h4 style="font-family: 'Courier New', Courier, monospace;">h4見出し</h4>
+  <h5 style="text-align: center;">h5見出し</h5>
+  <h6>h6見出し</h6>
+  <!-- pは段落を定義 -->
+  <p style="background-color: aqua;">This is a paragraph.</p>
+  <!-- スペースと改行 -->
+  <pre>My Bonnie lies over the ocean.
+
+    My Bonnie lies over the sea.
+  
+    My Bonnie lies over the ocean.
+  
+    Oh, bring back my Bonnie to me.
+  </pre>
+  <!-- aはリンク href属性は、リンク先のページを表している-->
+  <a href="https:www.w3shools.com">Link</a>
+  <a href="https://www.w3schools.com" target="_self">Visit w3schools</a>
+  <a href="https://www.w3schools.com" target="_blank">Visit w3schools</a>
+  <a href="https://www.w3schools.com" target="_parent">Visit w3schools</a>
+  <a href="https://www.w3schools.com" target="_top">Visit w3schools</a>
+  <br>
+  <p><a href="/HTML/lionel-messi-2020-barcelona-fc-la-liga-goal-besthqwallpapers.com-1440x900.jpg">Messi</a></p>
+  <br>
+  <a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width: 42px;height: 42px;">
+  </a>
+  <br>
+  <a href="mailto:exsample@exsample.com">Send email</a>
+  <br>
+  <button onclick="document.location='default.asp'">HTML tutorial</button>
+  <br>
+  <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML</a>
+  <br>
+  <h2 id="C4">Chapter 4</h2>
+
+
+  <!-- 改行 -->
+  <br>
+  <!-- imgは画像 srcは表示される画像へのパスを指定している-->
+  <!-- widthとheightは、幅と高さを指定 altは画像が表示されない時の代替テキストを指定 -->
+  <img src="lionel-messi-2020-barcelona-fc-la-liga-goal-besthqwallpapers.com-1440x900.jpg" alt="Messi" width="100"
+    height="100" usemap="#workmap">
+  <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" href="index.html">
+  </map>
+  <!-- style属性は、色、フォント、サイズを追加 -->
+  <p style="color: red">This is a red paragraph</p>
+  <!-- titleは要素の上にマウスを置くと、ツールチップとして表示される -->
+  <p title="I'm a tooltip">This is a paragraph</p>
+  <!-- さまざまなフォーマット -->
+  <b>太文字</b>
+  <strong>重要な文章</strong>
+  <i>斜体のテキスト</i>
+  <em>強調されたテキスト</em>
+  <mark>マークされたテキスト</mark>
+  <small>小さいテキスト</small>
+  <del>消去されたテキスト</del>
+  <ins>挿入されたテキスト</ins>
+  <sub>添字テキスト</sub>
+  <sup>上付きテキスト</sup>
+  <!-- 引用 -->
+  <p>Here is a quote from WWF's website:</p>
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature.
+    The world's leading conservation organization,
+    WWF works in 100 countries and is supported by
+    1.2 million members in the United States and
+    close to 5 million globally.
+  </blockquote>
+  <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+  <address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+  </address>
+  <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+  <bdo dir="rtl">This text will be written from right to left</bdo>
+
+</body>
+
+</html>
